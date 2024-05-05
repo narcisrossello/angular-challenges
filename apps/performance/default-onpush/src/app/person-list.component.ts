@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { PersonRowComponent } from './person-row.component';
+import { PersonTitleComponent } from './person-title.component';
 import { SearchFieldComponent } from './search-field.component';
 
 @Component({
@@ -23,11 +24,13 @@ import { SearchFieldComponent } from './search-field.component';
     CDFlashingDirective,
     PersonRowComponent,
     SearchFieldComponent,
+    PersonTitleComponent,
   ],
   template: `
-    <h1 cd-flash class="text-center font-semibold" title="Title">
+    <app-person-title [title]="title" />
+    <!-- <h1 cd-flash class="text-center font-semibold" title="Title">
       {{ title | titlecase }}
-    </h1>
+    </h1> -->
 
     <app-search-field (addName)="addNameToList($event)" />
 
