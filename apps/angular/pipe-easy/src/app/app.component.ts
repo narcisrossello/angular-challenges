@@ -1,6 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { PersonIndexPipe } from '../pipes/person-index.pipe';
+import { PersonIndexPipe } from './pipes/person-index.pipe';
 
 @Component({
   standalone: true,
