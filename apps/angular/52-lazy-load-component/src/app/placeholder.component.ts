@@ -10,8 +10,9 @@ import { Component } from '@angular/core';
       display: grid;
       padding: 20px;
       background-color: #f0f0f0;
-      height: 50%;
+      height: 150%;
     }
   `,
+  standalone: true,
 })
 export class PlaceholderComponent {}
